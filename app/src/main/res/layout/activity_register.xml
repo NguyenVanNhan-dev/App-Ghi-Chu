@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textColor="@color/purple"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        />
+
+    <EditText
+        android:id="@+id/textname"
+        android:layout_marginTop="50dp"
+        android:layout_width="304dp"
+        android:layout_height="43dp"
+        android:background="@drawable/border_background"
+        android:hint="Full name"
+        android:paddingLeft="15dp"
+        android:ems="10"
+        />
+
+    <EditText
+        android:id="@+id/textemail"
+        android:layout_width="304dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_background"
+        android:ems="10"
+        android:hint="Email Address"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:id="@+id/textpassword"
+        android:layout_marginTop="20dp"
+        android:layout_width="304dp"
+        android:layout_height="43dp"
+        android:background="@drawable/border_background"
+        android:hint="Password"
+        android:paddingLeft="15dp"
+        android:ems="10"
+        android:drawableRight="@drawable/icon_eye2"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already a member ?"
+            android:textStyle="normal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textStyle="bold"
+            android:textColor="@color/purple"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="----------OR CONNECT WITH----------"
+        android:textColor="#6F6B6B"
+        android:textSize="10sp"
+        android:paddingTop="7dp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:drawableLeft="@drawable/icons8_google"
+            android:layout_marginRight="5dp"
+            android:text="Google"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:drawableLeft="@drawable/facebook"
+            android:layout_marginRight="5dp"
+            android:text="Facebook"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:drawableLeft="@drawable/icon_email"
+            android:text="Email"/>
+    </LinearLayout>
+</LinearLayout>
